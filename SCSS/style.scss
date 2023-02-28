@@ -6,6 +6,8 @@
 @import "checkbox";
 @import "fadeIn";
 @import "hover";
+@import "dropdown-menu";
+@import "back";
 
 body {
   display: grid;
@@ -109,6 +111,7 @@ nav {
 /*************SECTION3*************/
 .section3 {
   padding: 50px;
+  z-index: -1;
 }
 
 
@@ -224,7 +227,21 @@ nav {
   .nav-form-icon img {
     width: 50px;
   }
-  
+
+  .dropdown-menu {
+    background: linear-gradient(
+    90deg,
+    rgba(47, 62, 70, 0.95) 0%,
+    rgba(82, 121, 111, 0.95) 47%,
+    rgba(135, 165, 152, 0.95) 100%
+  );
+    border: 1px solid rgba(255, 255, 255, 0.144);
+    box-shadow: inset 0px -1px 5px #c5c5c6;
+  }
+  .dropdown-menu a {
+    color: #f1f1f1;
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 450px) {

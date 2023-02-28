@@ -7,6 +7,9 @@
   transform: scaleX(1);
   box-shadow: 0px 3px 15px 0px rgba(255,255,255,0.9);
 }
+.navlinks-container .team a:hover::after {
+  transform: scaleX(0);
+}
 
 /*********CONTACT***********/
 .nav-form-icon:hover {

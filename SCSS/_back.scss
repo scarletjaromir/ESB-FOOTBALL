@@ -1,0 +1,16 @@
+.section3 {
+  position: relative;
+}
+
+.btn-default {
+  position: sticky;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(47, 62, 70, 0.90) 0%,
+    rgba(82, 121, 111, 0.9) 47%,
+    rgba(135, 165, 152, 0.9) 100%
+  );
+  padding: 10px;
+  border-radius: 7px;
+}
