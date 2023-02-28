@@ -290,6 +290,9 @@ nav {
 
 /************MEDIAS*******************/
 @media screen and (max-width: 1160px) {
+  body {
+    grid-template-rows: 120px 87.5vh auto;
+  }
   nav {
     grid-template-columns: 10% auto 10%;
   }
