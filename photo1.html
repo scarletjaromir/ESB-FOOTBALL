@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Photos</title>
+    <style>
+      body {
+        font-family: Raleway, sans-serif;
+        height: 100vh;
+        background: linear-gradient(
+          90deg,
+          rgb(46, 39, 39) 0%,
+          rgba(149, 22, 12, 1) 46%,
+          rgba(228, 200, 19, 1) 100%
+        );
+      }
+      .img {
+        width: 60%;
+        margin: 50px auto;
+        background: #ffffff4d;
+        border: 1px solid rgba(219, 218, 218, 0.144);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        -moz-backdrop-filter: blur(10px);
+        box-shadow: 20px 20px 40px -6px rgba(204, 201, 201, 0.2);
+        border-radius: 20px;
+        padding: 30px;
+      }
+      .img img {
+        width: 100%;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border-radius: 5px;
+      }
+      @media screen and (max-width: 700px ) {
+        .img {
+          width: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img">
+      <img src="./img/foot.jpg" alt="ballon foot" />
+    </div>
+  </body>
+</html>

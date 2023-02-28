@@ -1,0 +1,37 @@
+* {
+  // font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+}
+nav a span {
+  font-size: 30px;
+  font-weight: 400;
+}
+.navlinks-container {
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact a {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+a {
+  letter-spacing: 3px;
+}
+p {
+  line-height: 40px;
+}
+h2 {
+  font-weight: 300;
+  font-family: 'Courier New', Courier, monospace;
+}
+h1{
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  background: rgba(255, 255, 255, 0.342);
+  border-radius: 5px;
+}

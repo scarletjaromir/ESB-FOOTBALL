@@ -1,0 +1,16 @@
+{
+  "name": "esb-football-club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w SCSS:CSS"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "install": "^0.13.0",
+    "sass": "^1.58.3"
+  }
+}

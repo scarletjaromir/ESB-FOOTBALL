@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+*::selection {
+  background: var(--hover);
+  color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.nav-icon-contact, .main-nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlinks-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+}
+
+nav a span {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.navlinks-container {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact a {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+a {
+  letter-spacing: 3px;
+}
+
+p {
+  line-height: 40px;
+}
+
+h2 {
+  font-weight: 300;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  background: rgba(255, 255, 255, 0.342);
+  border-radius: 5px;
+}
+
+:root {
+  --text: #f1f1f1;
+}
+
+.checkbox-toggler {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+/***fadeIn logo***/
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*********MENU*********/
+.navlinks-container a:hover {
+  transform: scale(1.05);
+}
+
+.navlinks-container a:hover::after {
+  transform: scaleX(1);
+  box-shadow: 0px 3px 15px 0px rgba(255, 255, 255, 0.9);
+}
+
+/*********CONTACT***********/
+.nav-form-icon:hover {
+  transform: scale(1.09);
+}
+
+.contact:hover {
+  transform: scale(1.09);
+  transform-origin: right;
+}
+
+/********ANCRES**********/
+a:hover {
+  cursor: pointer;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 89vh auto;
+  background: rgb(47, 62, 70);
+  background: linear-gradient(90deg, rgb(47, 62, 70) 0%, rgb(82, 121, 111) 47%, rgb(135, 165, 152) 100%);
+  height: 100vh;
+}
+
+/****************NAVBAR****************/
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 15px 25px;
+  background: rgb(47, 62, 70);
+  background: linear-gradient(90deg, rgba(47, 62, 70, 0.8) 0%, rgba(82, 121, 111, 0.8) 47%, rgba(135, 165, 152, 0.8) 100%);
+  box-shadow: inset 0px -1px 5px #c5c5c6;
+  /* border: 2px solid green; */
+}
+
+/****logos***/
+.nav-icon {
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-icon img {
+  width: 90px;
+}
+
+.hamburger, .nav-form-icon {
+  display: none;
+}
+
+/***links**/
+.navlinks-container {
+  width: 100%;
+}
+
+.navlinks-container a {
+  position: relative;
+  transition: 0.4s ease-out;
+}
+
+/*********hover******/
+.navlinks-container a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #f1f1f1;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transition: 0.4s ease-out;
+}
+
+/******contact******/
+.contact {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+/*********SECTION1**********/
+.section1 {
+  background: url(../img/foot.jpg) top/cover;
+  background-repeat: no-repeat;
+}
+
+/************SECTION2**************/
+.section2 {
+  padding: 50px;
+}
+
+.section2 h2 {
+  margin-bottom: 40px;
+}
+
+/*************SECTION3*************/
+.section3 {
+  padding: 50px;
+}
+
+/************MEDIAS*******************/
+@media screen and (max-width: 1160px) {
+  nav {
+    grid-template-columns: 10% auto 10%;
+  }
+  .nav-icon {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-icon span, .nav-icon p {
+    display: none;
+  }
+  .main-nav-links {
+    order: 1;
+  }
+  /********************HAMBURGER**********/
+  .nav-burger {
+    width: 30px;
+    height: 2px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    background: #fafafa;
+    align-items: center;
+    position: relative;
+  }
+  .nav-burger::before,
+  .nav-burger::after {
+    content: "";
+    background-color: #fafafa;
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+  .nav-burger::before {
+    content: "";
+    transform: translateY(-8px);
+  }
+  .nav-burger::after {
+    content: "";
+    transform: translateY(8px);
+  }
+  /***Animation burger*****/
+  .checkbox-toggler:checked + .nav-btn .nav-burger {
+    background-color: transparent;
+  }
+  .checkbox-toggler:checked + .nav-btn .nav-burger::before {
+    transform: translateY(0px) rotate(135deg);
+  }
+  .checkbox-toggler:checked + .nav-btn .nav-burger::after {
+    transform: translateY(0px) rotate(-135deg);
+  }
+  /***Menu hamburger***/
+  .navlinks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: auto;
+    height: 300px;
+    padding: 15px 50px 15px 20px;
+    background: rgba(255, 255, 255, 0.3019607843);
+    border-right: 1px solid #c5c5c6;
+    border-bottom: 1px solid #c5c5c6;
+    box-shadow: 0px 1px 5px 0px rgba(255, 255, 255, 0.6);
+    border-radius: 0 0 13px 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    /*cache le menu*/
+    transform: translate(-100%);
+    transition: 0.5s;
+  }
+  /*animation au clic sur la checkbox*/
+  .checkbox-toggler:checked ~ .navlinks-container {
+    transform: translate(0%);
+  }
+  .navlinks-container a {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  /**************CONTACT**********/
+  .nav-icon-contact {
+    order: 3;
+  }
+  .contact {
+    display: none;
+  }
+  .nav-form-icon {
+    display: block;
+    transition: 0.3s ease-out;
+  }
+  .nav-form-icon img {
+    width: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .nav-icon img {
+    width: 90px;
+  }
+  .nav-icon span {
+    font-size: 15px;
+  }
+  .nav-icon p {
+    font-size: 13px;
+  }
+  .nav-form-icon img {
+    width: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
