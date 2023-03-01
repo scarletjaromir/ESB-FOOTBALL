@@ -156,6 +156,7 @@ a:hover {
 
 .team {
   position: relative;
+  transition: 3.3s ease-out;
 }
 
 .dropdown-menu {
@@ -173,20 +174,20 @@ a:hover {
   box-shadow: 20px 20px 40px -6px rgba(204, 201, 201, 0.2);
   gap: 10px;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 0 20px 20px 0px;
   z-index: 2;
 }
 
 .dropdown-menu a:hover {
   background: rgba(255, 252, 252, 0.4235294118);
   border-radius: 40px;
+  padding: 0 5px;
 }
 
 .team:hover .dropdown-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  transition: 0.3s ease-out;
 }
 
 .section3 {
