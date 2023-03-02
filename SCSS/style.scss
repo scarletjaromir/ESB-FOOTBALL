@@ -67,7 +67,7 @@ nav {
   position: relative;
   transition: 0.4s ease-out;
 }
-/*********hover******/
+/*********Trait horizontale******/
 .navlinks-container a::after {
   content: "";
   position: absolute;
@@ -240,6 +240,7 @@ nav {
   );
     border: 1px solid rgba(255, 255, 255, 0.144);
     box-shadow: inset 0px -1px 5px #c5c5c6;
+    border-radius: 0px 20px 20px 0px;
   }
   .dropdown-menu a {
     color: #f1f1f1;

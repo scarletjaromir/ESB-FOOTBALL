@@ -8,6 +8,9 @@
   background: rgb(187, 102, 102);
   color: #f1f1f1;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   display: inline-block;

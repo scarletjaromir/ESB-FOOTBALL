@@ -11,6 +11,10 @@
   color: #f1f1f1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -125,6 +129,27 @@ h1 {
     opacity: 1;
   }
 }
+/*****fadiIn section2*****/
+.section2, .section3 {
+  animation: fadein 6s;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*********MENU*********/
 .navlinks-container a:hover {
   transform: scale(1.05);
@@ -164,7 +189,7 @@ a:hover {
   position: absolute;
   top: 20px;
   left: -30%;
-  min-width: 158px;
+  min-width: 165px;
   min-height: 400px;
   background: rgba(255, 255, 255, 0.3019607843);
   border: 1px solid rgba(255, 255, 255, 0.144);
@@ -174,14 +199,14 @@ a:hover {
   box-shadow: 20px 20px 40px -6px rgba(204, 201, 201, 0.2);
   gap: 10px;
   padding: 20px;
-  border-radius: 0 20px 20px 0px;
+  border-radius: 20px 20px 20px 20px;
   z-index: 2;
 }
 
 .dropdown-menu a:hover {
   background: rgba(255, 252, 252, 0.4235294118);
   border-radius: 40px;
-  padding: 0 5px;
+  padding: 0 8px;
 }
 
 .team:hover .dropdown-menu {
@@ -249,7 +274,7 @@ nav {
   transition: 0.4s ease-out;
 }
 
-/*********hover******/
+/*********Trait horizontale******/
 .navlinks-container a::after {
   content: "";
   position: absolute;
@@ -398,6 +423,7 @@ nav {
     background: linear-gradient(90deg, rgba(47, 62, 70, 0.95) 0%, rgba(82, 121, 111, 0.95) 47%, rgba(135, 165, 152, 0.95) 100%);
     border: 1px solid rgba(255, 255, 255, 0.144);
     box-shadow: inset 0px -1px 5px #c5c5c6;
+    border-radius: 0px 20px 20px 0px;
   }
   .dropdown-menu a {
     color: #f1f1f1;
