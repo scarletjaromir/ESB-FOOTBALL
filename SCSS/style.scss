@@ -110,14 +110,70 @@ nav {
 
 /*************SECTION3*************/
 .section3 {
+  // border: 2px solid red;
   padding: 50px;
   z-index: -1;
+  display: grid;
+  grid-template-columns: 25% 65%;
+  justify-content: space-between;
+}
+// .section3-left {
+//   border: 2px solid white;
+// }
+.img-section {
+  // border: 2px solid blue;
+  width: 100%;
+  background: url(../img/foot2.jpg) center/cover;
+}
+.img2 {
+  width: 100%;
+  background: url(../img/kidsfoot.jpg) center/cover;
 }
 
+/*****SECTION4***/
+.section4 {
+  // border: 2px solid red;
+  padding: 50px;
+  // z-index: -1;
+  display: grid;
+  grid-template-columns: 25% 65%;
+  justify-content: space-between;
+}
+
+/**********FOOTER***********/
+footer {
+  background: #222;
+  color: white;
+  box-shadow: inset 0px 1px 5px #c5c5c6;
+
+}
+
+footer p {
+  margin-bottom: 0px;
+  padding: 30px 0px;
+  text-align: center;
+}
 
 /************MEDIAS*******************/
 
-
+@media screen and (min-width: 1450px) {
+  .section2 h2 {
+    font-size: 2rem;
+  }
+  .section2 p {
+    font-size: 22px;
+  }
+  .section3, .section4 {
+    grid-template-rows: 700px;
+    justify-content: center;
+    gap: 50px;
+  }
+  .section3-left {
+    align-self: center;
+    font-size: 22px;
+    font-weight: 200;
+  }
+}
 @media screen and (max-width:1160px){
   body {
     grid-template-rows: 120px 87.5vh auto;
@@ -246,7 +302,26 @@ nav {
     color: #f1f1f1;
     font-size: 15px;
   }
+  
 }
+
+@media (max-width: 760px){
+  .section3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 400px;
+  gap: 40px;
+  // border: 2px solid blue;
+}
+.section4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px 1fr;
+  gap: 40px;
+  // border: 2px solid blue;
+}
+}
+
 
 @media (max-width: 450px) {
   
