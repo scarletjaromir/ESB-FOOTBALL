@@ -72,7 +72,7 @@ h1 {
 
 /*****lightbox off*****/
 .lightbox {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -107,7 +107,7 @@ h1 {
 /*****Flèche gauche et droite****/
 .lightbox-content a i {
   text-decoration: none;
-  color: #f1f1f14d;
+  color: #f1f1f167;
   font-size: 35px;
 }
 .lightbox-content a i:hover {
@@ -185,7 +185,7 @@ img {
 
 @media (orientation:landscape) {
   .lightbox-content {
-    width: 57%;
+    width: 53%;
   }
 }
   
