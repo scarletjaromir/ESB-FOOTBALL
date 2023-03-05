@@ -91,13 +91,12 @@ h1 {
 /******lightbox ON******/
 .lightbox:target {
   visibility: visible;
-  /* transform: scale(1,1);
-  transform-origin: left; */
+  
 }
 
 .lightbox-content {
   /* border: 2px solid green; */
-  width: 80vw;
+  width: 80%;
   background: rgba(0, 0, 0, 0.733);
   border-radius: 15px;
   padding: 1rem 1rem 0 1rem;
@@ -183,7 +182,7 @@ img {
 }
 
 
-@media (orientation:landscape) {
+@media (orientation:landscape) and (max-height: 415px){
   .lightbox-content {
     width: 53%;
   }
