@@ -30,7 +30,7 @@ nav {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 15px 25px;
-  background: rgb(47, 62, 70);
+  // background: rgb(47, 62, 70);
   background: linear-gradient(
     90deg,
     rgba(47, 62, 70, 0.80) 0%,
@@ -175,11 +175,10 @@ footer p {
   }
 }
 @media screen and (max-width:1160px){
-  body {
-    grid-template-rows: 120px 87.5vh auto;
-  }
+  // body {
+  //   grid-template-rows: 120px 86% auto;
+  // }
   nav {
-    // position: relative;
     grid-template-columns: 10% auto 10%;
   }
   .nav-icon{
@@ -324,6 +323,9 @@ footer p {
 
 
 @media (max-width: 450px) {
+  body {
+    grid-template-rows: 120px 85.4vh;
+  }
   
   .nav-icon img {
     width: 90px;
@@ -337,7 +339,6 @@ footer p {
   .nav-form-icon img {
     width: 30px;
   }
- 
 }
 
 

@@ -245,7 +245,6 @@ nav {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 15px 25px;
-  background: rgb(47, 62, 70);
   background: linear-gradient(90deg, rgba(47, 62, 70, 0.8) 0%, rgba(82, 121, 111, 0.8) 47%, rgba(135, 165, 152, 0.8) 100%);
   box-shadow: inset 0px -1px 5px #c5c5c6;
   /* border: 2px solid green; */
@@ -369,9 +368,6 @@ footer p {
   }
 }
 @media screen and (max-width: 1160px) {
-  body {
-    grid-template-rows: 120px 87.5vh auto;
-  }
   nav {
     grid-template-columns: 10% auto 10%;
   }
@@ -498,6 +494,9 @@ footer p {
   }
 }
 @media (max-width: 450px) {
+  body {
+    grid-template-rows: 120px 85.4vh;
+  }
   .nav-icon img {
     width: 90px;
   }
